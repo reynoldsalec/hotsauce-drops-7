@@ -32,7 +32,7 @@ before_script:
   # Set simpletest to non-verbose
   - drush vset --yes simpletest_verbose FALSE
 
-script: drush test-run Syslog --xml --uri=http://127.0.0.1:8080
+script: drush test-run --all --xml --uri=http://127.0.0.1:8080
 
 matrix:
   allow_failures:
